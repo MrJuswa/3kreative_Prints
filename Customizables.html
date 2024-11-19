@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.imgur.com/eGecm7S.jpeg" type="image/png">
+    <title>3Kreative Prints | Customizables </title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+      <style>
+        body {
+            background: linear-gradient(to right, black, #2b113c); 
+            color: #e0e0e0;
+        }
+		
+        .navbar {
+            background-color: #160b1d; 
+        }
+
+        .navbar.navbar-expand-lg .navbar-brand {
+            font-size: 1em;
+        }
+
+        .navbar a[href="Customizables.html"] {
+            border: 2px solid rgba(255, 255, 255, 255); 
+            border-radius: 14px;
+            padding: 4px 15px;
+        }
+		
+		.navbar a.navbar-brand:hover {
+        color: #d4af37;
+        text-shadow: 0 0 5px rgba(255, 223, 0, 0.7); 
+        transition: color 0.3s ease, text-shadow 0.3s ease; 
+		}
+
+        .menu-header {
+            background-color: #160b1d; 
+            color: #f1f1f1;
+            padding: 20px 0;
+            text-align: center;
+        }
+		
+        hr {
+            height: 1px;
+            width: 100%;
+            border: none;
+            color: white !important;
+            background-color: white !important;
+            opacity: 1 !important; 
+        }
+		
+        h1 {
+            color: white; 
+            font-size: 85px;
+            font-family: Garamond, serif;
+        }
+		
+        .card {
+            background-color: #261a2e;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7);
+            color: #d1d1d1;
+            transition: transform 0.3s ease, box-shadow 0.3s ease; 
+            height: 100%; 
+            display: flex;
+            flex-direction: row; 
+        }
+
+        .row.justify-content-center {
+            gap: 20px; 
+        }
+
+		.card {
+	
+			background: linear-gradient(to bottom, #261a2e 70%, black 30%);
+    }
+
+
+       .card:hover {
+			transform: scale(1.05); 
+			box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8); 
+			background-color: rgba(255, 255, 255, 0.1); 
+			filter: brightness(0.8);
+			transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease, filter 0.3s ease;
+		}
+
+        .card-img-top {
+            border-top-left-radius: 8px;
+            border-bottom-left-radius: 8px;
+            height: 100%;
+            width: 200px; 
+            object-fit: cover;
+			
+			
+        }
+		
+   
+		.card-body {
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			padding-left: 20px;
+			flex-grow: 1;
+			
+    }
+
+
+        .product-name {
+            font-weight: bold;
+            font-size: 1.6em;
+            color: #f1f1f1; 
+        }
+
+        .price {
+            color: #f6ba61; 
+            font-weight: bold;
+            font-size: 1.1em; 
+        }
+
+        .description {
+            color: #a8a8a8; 
+        }
+
+        footer {
+            background-color: #0e0713 !important;
+            color: #f1f1f1 !important;
+            padding: 20px 0 !important;
+            text-align: center !important;
+            position: fixed !important;
+            bottom: 0 !important;
+            width: 100% !important;
+            height: 120px !important;
+            z-index: 100 !important;
+        }
+		
+		a {
+			text-decoration: none;
+		}
+		
+    </style>
+</head>
+<body>
+
+      <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="https://i.imgur.com/eGecm7S.jpeg"
+                 alt="Brand Logo" width="60">
+            &nbsp &nbsp <b>3Kreative Prints </b> &nbsp | Customizables
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/profile.php?id=61559872821018">
+                        <img src="https://img.icons8.com/m_rounded/200/FFFFFF/facebook.png" alt="Facebook" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/messages/t/256807597526149">
+                        <img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-messenger.png" alt="Messenger" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/maps/search/Lot+2D+Espiritu+Compound+UPS+5+Brgy.+San+Isidro,+1700/@14.4602784,121.0098128,17z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="https://img.icons8.com/ios7/600/FFFFFF/google-maps-new.png" alt="G_Maps" width="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+   
+	
+	<nav class="navbar navbar-expand-lg navbar-dark">
+	
+        <div class="container">
+		<hr>
+            <a class="navbar-brand" href="index.html">  &nbsp   Home  </a>
+            <a class="navbar-brand" href="Essentials.html">  &nbsp  Essentials  </a>
+			<a class="navbar-brand" href="Customizables.html">  &nbsp  <b> ◇ Customizables </b>  </a>
+			<a class="navbar-brand" href="Other Services.html">  &nbsp   Other Services  </a>
+			<a class="navbar-brand" href="About Us.html">  &nbsp   About Us  </a>
+		<hr>
+        </div>
+    </nav>
+
+	
+	
+    <header class="menu-header">
+        <h1> <b> 3Kreative Prints </b> </h1>
+        <p><img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="30"> &nbsp <b> layouts.n.prints@gmail.com </b></p>
+		 
+    </header>
+	
+	
+  <div class="container my-5">
+    <div class="row row-cols-1">
+	
+		 <a href="Customizables_Button Pin.html">
+        <div class="col mb-4">
+            <div class="card" style="height: 100%;">           
+                    <img src="https://i.pinimg.com/736x/b6/7f/88/b67f88dcea3ba65a10dabfb5e33f48c4.jpg" class="card-img-top" alt="Button Pin">             
+                <div class="card-body" style="height: 100%;">
+                    <h5 class="product-name">Button Pin</h5>
+                    <p class="description">Show off your style with custom button pins! Perfect for gifts or promotions. Order now!</p>
+                    <p class="price">Available!</p>
+                </div>
+            </div>
+        </div>
+		</a>
+		
+		<a href="Customizables_Acrylic Keychain.html">
+        <div class="col mb-4">
+            <div class="card" style="height: 100%;">              
+                    <img src="https://i.pinimg.com/736x/51/69/e0/5169e056faff5d1d567a8b3e64b906f3.jpg" class="card-img-top" alt="Acrylic Keychain">                
+                <div class="card-body" style="height: 100%;">
+                    <h5 class="product-name">Acrylic Keychain</h5>
+                    <p class="description">Carry your memories with you! Custom acrylic keychains that are durable and unique. Get yours today!</p>
+                    <p class="price">Available!</p>
+                </div>
+            </div>
+        </div>
+		</a>
+		
+		<a href="Customizables_Photo Card.html">
+        <div class="col mb-4">
+            <div class="card" style="height: 100%;">
+                    <img src="https://i.pinimg.com/736x/26/60/0f/26600f144de99d9fc178a1b83eb65878.jpg" class="card-img-top" alt="Photocard">
+               
+                <div class="card-body" style="height: 100%;">
+                    <h5 class="product-name">Photocard</h5>
+                    <p class="description">Capture your memories in a sleek photocard! Perfect for personal keepsakes or fan collections.</p>
+                    <p class="price">Available!</p>
+                </div>
+            </div>
+        </div>
+		</a>
+		
+		
+		<a href="Customizables_Mini Filmstrips.html">
+        <div class="col mb-4">
+            <div class="card" style="height: 100%;">               
+                    <img src="https://i.pinimg.com/736x/87/5e/97/875e97e8f7037e042c2f2d650c128635.jpg" class="card-img-top" alt="Mini Filmstrips">               
+                <div class="card-body" style="height: 100%;">
+                    <h5 class="product-name">Mini Filmstrips</h5>
+                    <p class="description">Relive moments with mini filmstrips! A creative and fun way to showcase your photos.</p>
+                    <p class="price">Available!</p>
+                </div>
+            </div>
+        </div>
+		</a>
+
+		
+		
+    </div>
+</div>
+
+
+
+
+	<br><br><br><br>
+
+
+    <footer class="footer text-center">
+		
+        <p>Print your imagination with us! ✨ <br> Send your files at: <img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="25"> <b> layouts.n.prints@gmail.com </b> </p>
+                        
+		
+	
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

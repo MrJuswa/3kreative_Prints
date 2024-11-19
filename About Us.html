@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" href="https://i.imgur.com/eGecm7S.jpeg" type="image/png">
+    <title>3Kreative Prints | About Us </title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.1/css/bootstrap.min.css">
+	<style>
+		 body {
+    background: linear-gradient(to right, black, black);
+    color: #e0e0e0;
+    box-sizing: border-box;
+	}
+
+	.navbar {
+		background-color: #160b1d !important;
+	}
+
+	.navbar.navbar-expand-lg .navbar-brand {
+		font-size: 1em;
+	}
+
+	.navbar a[href="About Us.html"] {
+		border: 2px solid rgba(255, 255, 255, 255) !important;
+		border-radius: 14px !important;
+		padding: 4px 15px !important;
+	}
+
+	.navbar a.navbar-brand:hover {
+		color: #d4af37 !important;
+		text-shadow: 0 0 5px rgba(255, 223, 0, 0.7) !important;
+		transition: color 0.3s ease, text-shadow 0.3s ease !important;
+	}
+
+	.menu-header {
+		background-color: #160b1d;
+		color: #f1f1f1;
+		padding: 20px 0;
+		text-align: center;
+	}
+
+	hr {
+		height: 1px !important;
+		width: 100% !important;
+		border: none;
+		color: white !important;
+		background-color: white !important;
+		opacity: 1 !important;
+	}
+
+	h1 {
+		color: white;
+		font-size: 85px;
+		font-family: Garamond, serif;
+	}
+
+	footer {
+		background-color: #0e0713 !important;
+		color: #f1f1f1 !important;
+		padding: 20px 0 !important;
+		text-align: center !important;
+		position: fixed !important;
+		bottom: 0 !important;
+		width: 100% !important;
+		height: 120px !important;
+		z-index: 100 !important;
+	}
+
+	.parallax-container {
+		background: url('https://i.pinimg.com/originals/6e/0f/d6/6e0fd69a36ee8bbf9504f3132c79faff.jpg') no-repeat center center fixed;
+		background-size: cover;
+		height: 1000px;
+		display: flex;
+		align-items: center;
+		color: #f1f1f1;
+		font-size: 1.7rem;
+		text-align: center;
+		position: relative;
+		padding-top: 30px;
+	}
+
+	.parallax-container:before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: radial-gradient(circle, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 0.7) 170%);
+		z-index: 1;
+		pointer-events: none;
+	}
+
+	.parallax-container .content-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		width: 100%;
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+		z-index: 2;
+	}
+
+	.content-section {
+		background: rgba(0, 0, 0, 0.6);
+		padding: 50px 20px;
+		width: 100%;
+		max-height: 1000px;
+		border-radius: 40px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		text-align: center;
+		margin-bottom: 40px;
+		overflow: auto;
+		transition: all 0.3s ease-in-out;
+		position: relative;
+	}
+
+	.content-section:hover {
+		box-shadow: 0 0 20px rgba(255, 255, 255, 0.9);
+		transform: scale(1.05);
+		z-index: 1;
+	}
+
+	.content-section h2 {
+		font-size: 2rem;
+		color: #fff;
+		margin-bottom: 20px;
+	}
+
+	.content-section p {
+		font-size: 1.1rem;
+		color: #e0e0e0;
+		line-height: 1.6;
+		text-align: left;
+	}
+
+	.social-icons {
+		z-index: 2;
+		position: relative;
+	}
+
+	.social-icons img {
+		margin-right: 15px;
+		width: 35px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
+	}
+
+	.social-icons img:hover {
+		transform: scale(1.2);
+		box-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+	}
+
+	.responsive-gif {
+		max-width: 85%;
+		max-height: 85%;
+		object-fit: contain;
+		border-radius: 30px;
+		margin-left: 10px;
+	}
+
+	.card {
+		background: linear-gradient(to bottom, #261a2e 82%, black 18%);
+		border-radius: 25px;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+		transition: all 0.3s ease-in-out;
+		display: flex;
+		flex-direction: row;
+		overflow: hidden;
+	}
+
+	.card:hover {
+		transform: scale(1.05);
+		box-shadow: 0 6px 18px rgba(0, 0, 0, 0.8);
+		filter: brightness(0.8);
+	}
+
+	.card-body {
+		flex: 1;
+		padding: 20px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+	}
+
+	.card-title {
+		color: #f1f1f1;
+		font-size: 1.2rem;
+		font-weight: bold;
+		margin-bottom: 0.5rem;
+	}
+
+	.card-text {
+		color: #e0e0e0;
+		font-size: 0.9rem;
+		line-height: 1.6;
+	}
+
+	.profile-img {
+		width: 50%;
+		height: 100%;
+		object-fit: cover;
+		border-radius: 0;
+		transition: all 0.3s ease-in-out;
+	}
+
+	.profile-img:hover {
+		transform: scale(1.05);
+	}
+
+	a {
+		text-decoration: none;
+	}
+
+	@media screen and (max-width: 768px) {
+		.parallax-container .content-wrapper {
+			flex-direction: column;
+			align-items: center;
+			padding: 0 15px;
+		}
+
+		.responsive-gif {
+			display: none;
+		}
+	}
+
+	@media screen and (max-width: 480px) {
+		.contact-section h3 {
+			font-size: 1.5rem;
+		}
+
+		.contact-section p {
+			font-size: 1.1rem;
+		}
+
+		.content-section h2 {
+			font-size: 1.6rem;
+		}
+
+		.content-section p {
+			font-size: 1.1rem;
+		}
+
+		.responsive-gif {
+			display: none;
+		}
+	}
+
+
+
+</style>
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="https://i.imgur.com/eGecm7S.jpeg"
+                 alt="Brand Logo" width="60">
+            &nbsp &nbsp <b>3Kreative Prints </b> &nbsp | About Us
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/profile.php?id=61559872821018">
+                        <img src="https://img.icons8.com/m_rounded/200/FFFFFF/facebook.png" alt="Facebook" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/messages/t/256807597526149">
+                        <img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-messenger.png" alt="Messenger" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/maps/search/Lot+2D+Espiritu+Compound+UPS+5+Brgy.+San+Isidro,+1700/@14.4602784,121.0098128,17z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="https://img.icons8.com/ios7/600/FFFFFF/google-maps-new.png" alt="G_Maps" width="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <hr>
+            <a class="navbar-brand" href="index.html"> &nbsp Home </a>
+            <a class="navbar-brand" href="Essentials.html"> &nbsp Essentials </a>
+            <a class="navbar-brand" href="Customizables.html"> &nbsp Customizables </a>
+            <a class="navbar-brand" href="Other Services.html"> &nbsp Other Services </a>
+            <a class="navbar-brand" href="About Us.html"> &nbsp <b> ◇ About Us </b> </a>
+            <hr>
+        </div>
+    </nav>
+
+	
+      <header class="menu-header">
+        <h1> <b> 3Kreative Prints </b> </h1>
+        <p><img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="30"> &nbsp <b> layouts.n.prints@gmail.com </b></p>
+		 
+    </header>
+
+
+    <div class="parallax-container">
+	
+        <div class="content-wrapper">
+		
+            <div class="content-section">              
+				
+				<img src="https://i.pinimg.com/originals/bb/cf/df/bbcfdf1f789cbce7c1d9a4a429fcb7c2.gif" 
+				 alt="wala lang character lol" 
+				 class="responsive-gif">
+				 
+				
+				 <div class="social-icons !important">
+				 <br>
+				
+				   <h2>Contact Us!</h2>
+				
+					<a href="https://www.facebook.com/profile.php?id=61559872821018">
+						<img src="https://img.icons8.com/m_rounded/200/FFFFFF/facebook.png" alt="Facebook">
+					</a>
+					<a href="https://www.facebook.com/messages/t/256807597526149">
+						<img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-messenger.png" alt="Messenger">
+					</a>
+					<a href="https://www.google.com/maps/search/Lot+2D+Espiritu+Compound+UPS+5+Brgy.+San+Isidro,+1700/@14.4602784,121.0098128,17z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+						<img src="https://img.icons8.com/ios7/600/FFFFFF/google-maps-new.png" alt="G_Maps">
+					</a>
+					<a href="https://www.youtube.com/watch?v=2GXlAJPa-KM">
+						<img src="https://img.icons8.com/ios7/512/FFFFFF/youtube-play.png" alt="Youtube">
+					</a>
+				</div>
+				
+            </div>
+			
+		
+				&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+				
+            <div class="content-section">
+			<hr>			 
+            <h2>About Us</h2>
+            <p>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp
+			<b> 3Kreatives Prints </b> is a printing business service store, dedicated to provide <b> you </b> the best, high quality, sophisticated local prints
+			situated in <i> Parañaque City, Philippines</i>. </p>
+			
+			<br>
+			 <p> &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp We offter variaties of printing, to multiple materials that includes but are not limited to: <i> paper, shirts, mugs, button pins, and other more! </i>
+			We also provide batch printing services for events, organizations, and personalized orders for our clients and customers. </p>
+			</p>
+			
+			
+			</div>
+		
+		</div>
+		
+	</div>	
+	
+<div class="container my-5">
+    <div class="row g-4">
+        <div class="col-md-4">
+            <div class="card text-light h-100 d-flex flex-row">
+                <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/444761283_7646571958796041_6257127233377239089_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeFKKSMtK0_YyABZbvm2qsgoBDvtZC5JyywEO-1kLknLLM_nBm3PN3qXFi1q5djwb6uaMKTLRsQmQ94RB4HD1BLC&_nc_ohc=5pzrUnyBXG0Q7kNvgFA7OVo&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=ASkD9qReTp7RoKdU2XSsC2n&oh=00_AYDldhdjp2n_inNjzTeyClLbRIuuyRJ2APyyZYj9RQMbAQ&oe=673E588C" alt="Kurt" class="profile-img">
+                <div class="card-body">
+                    <h5 class="card-title">Concept Designer</h5>
+                    <p class="card-text">
+                        The guy who owns the shop and sent the referrence design.
+					</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-light h-100 d-flex flex-row">
+                <img src="https://scontent.fmnl3-2.fna.fbcdn.net/v/t1.6435-9/86974275_2599598037029034_6060573457408589824_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeEiV51H_mZDWFRYQAjBow2Y9U1-gMtdEyn1TX6Ay10TKdj1zwx4eWy8HPkrRxwGPqw2KTEZp8Mnq1sO3fkpaTkU&_nc_ohc=x8qNohnXe_QQ7kNvgHI_awK&_nc_zt=23&_nc_ht=scontent.fmnl3-2.fna&_nc_gid=AkRUAQ4C3XRaa4685z-NT6T&oh=00_AYDQRwvO7kFJ8-WNz3tXHTs5uzMIzWY8HGBk_pgKoVqpOg&oe=675FF986" alt="Juswa" class="profile-img">
+                <div class="card-body">
+                    <h5 class="card-title">Coder</h5>
+                    <p class="card-text">
+                        The guy who got like 3 hours of sleep. Taena give this man a hug holyshit.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-md-4">
+            <div class="card text-light h-100 d-flex flex-row">
+                <img src="https://scontent.fmnl3-4.fna.fbcdn.net/v/t39.30808-6/459605183_1499965374219209_4365650127378547922_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=a5f93a&_nc_eui2=AeHYb2tRA9pTCi03v1srEof8rmiLPEVZ0JGuaIs8RVnQkTmBlBcRgpwRMNIxj_tGKogMbyGbIT-2VppKwojwkWD_&_nc_ohc=KIhszZJNtuoQ7kNvgEPAfRk&_nc_zt=23&_nc_ht=scontent.fmnl3-4.fna&_nc_gid=AiNchZBC_qOAfqsZExoyWJ_&oh=00_AYDM_ytwH7-JbO5kI677L9eWLhdwY0vUmd0DG375O_Yl2w&oe=673E5972" alt="Ray" class="profile-img">
+                <div class="card-body">
+                    <h5 class="card-title">This dude</h5>
+                    <p class="card-text">
+                        I don't know man, this guy smiles through everything and survives. 
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+		
+	
+	<br><br><br><br>
+
+
+    <footer class="footer text-center">
+	
+        <p>Print your imagination with us! ✨ <br> Send your files at: <img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="25"> <b> layouts.n.prints@gmail.com </b> </p>
+		
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

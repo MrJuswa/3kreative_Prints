@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.imgur.com/eGecm7S.jpeg" type="image/png">
+    <title>3Kreative Prints</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    body {
+        background: linear-gradient(to right, black, #2b113c); 
+        color: #e0e0e0;
+    }
+
+    .navbar {
+        background-color: #160b1d; 
+    }
+
+    .navbar.navbar-expand-lg .navbar-brand {
+        font-size: 1em;
+    }
+
+    .navbar a[href="index.html"] {
+        border: 2px solid rgba(255, 255, 255, 255); 
+        border-radius: 14px;
+        padding: 4px 15px; 
+    }
+	
+	.navbar a.navbar-brand:hover {
+        color: #d4af37;
+        text-shadow: 0 0 5px rgba(255, 223, 0, 0.7); 
+        transition: color 0.3s ease, text-shadow 0.3s ease; 
+    }
+
+    .menu-header {
+        background-color: #160b1d; 
+        color: #f1f1f1;
+        padding: 20px 0;
+        text-align: center;
+    }
+
+    hr {
+        height: 1px;
+        width: 100%;
+        border: none;
+        background-color: white;
+        opacity: 1; 
+    }
+
+    h1 {
+        color: white; 
+        font-size: 85px;
+        font-family: Garamond, serif;
+    }
+
+    .parallax-section {
+        background: url('https://getwallpapers.com/wallpaper/full/a/0/2/1180475-free-retro-robot-wallpaper-1920x1080-windows-7.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: #f1f1f1;
+        font-size: 1.7rem;
+        text-align: center;
+        position: relative;
+    }
+
+    .parallax-section::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 50%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.6);
+        z-index: 1;
+    }
+
+    .parallax-section div {
+        position: relative;
+        z-index: 2;
+        padding-left: 950px; 
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+        font-size: 1.5rem; 
+    }
+
+    @media (max-width: 991px) { 
+        .parallax-section div {
+            padding-left: 300px;
+            text-align: left;
+        }
+    }
+
+    .content-section {
+        background-color: #15081a; 
+        color: #e0e0e0;
+        padding: 40px 15px;
+    }
+
+    .content-section .img-fluid {
+		width: 100%; 
+		height: 250px; 
+		object-fit: cover; 
+		margin-bottom: 20px;
+		transition: transform 0.3s ease, box-shadow 0.3s ease, filter 0.3s ease;
+		border-radius: 15px;
+	}
+	
+	.content-section .img-fluid:hover {
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    filter: brightness(0.8); 
+	}
+	
+
+    .content-section .img-fluid:hover {
+        transform: scale(1.05);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    }
+
+    @media (max-width: 991px) {
+        .parallax-section div {
+            font-size: 1.4rem; 
+            padding-left: 300px; 
+        }
+    }
+
+    @media (max-width: 767px) {
+        .parallax-section div {
+            font-size: 1.2rem;
+            padding-left: 20px; 
+            text-align: left; 
+        }
+    }
+
+    .content-section2 {
+        background-color: #0a040c; 
+        color: #e0e0e0;
+        padding: 45px 15px;
+        width: 100%;
+        text-shadow: 2px 2px 5px rgba(0, 0, 0, 1);
+    }
+
+    footer {
+        background-color: #0e0713 !important;
+        color: #f1f1f1 !important;
+        padding: 20px 0 !important;
+        text-align: center !important;
+        position: fixed !important;
+        bottom: 0 !important;
+        width: 100% !important;
+        height: 120px !important;
+        z-index: 100 !important;
+    }
+	
+	
+</style>
+</head>
+<body>
+
+   
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="">
+            <img src="https://i.imgur.com/eGecm7S.jpeg"
+                 alt="Brand Logo" width="60">
+            &nbsp &nbsp <b>3Kreative Prints </b> &nbsp | Home
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/profile.php?id=61559872821018">
+                        <img src="https://img.icons8.com/m_rounded/200/FFFFFF/facebook.png" alt="Facebook" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/messages/t/256807597526149">
+                        <img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-messenger.png" alt="Messenger" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/maps/search/Lot+2D+Espiritu+Compound+UPS+5+Brgy.+San+Isidro,+1700/@14.4602784,121.0098128,17z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="https://img.icons8.com/ios7/600/FFFFFF/google-maps-new.png" alt="G_Maps" width="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+    
+    
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <hr>
+            <a class="navbar-brand" href="index.html"> &nbsp <b> ◇ Home </b> </a>
+            <a class="navbar-brand" href="Essentials.html"> &nbsp Essentials </a>
+            <a class="navbar-brand" href="Customizables.html"> &nbsp Customizables </a>
+            <a class="navbar-brand" href="Other Services.html"> &nbsp Other Services </a>
+            <a class="navbar-brand" href="About Us.html"> &nbsp About Us </a>
+            <hr>
+        </div>
+    </nav>
+
+   
+    <header class="menu-header">
+        <h1><b> 3Kreative Prints </b></h1>
+        <p><img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="30"> &nbsp <b> layouts.n.prints@gmail.com </b></p>
+    </header>
+
+   
+    <div class="parallax-section">
+        <div>
+            <p> <i> Print your imagination with us! </i> ✨</p>
+            <p> Send your files at: <img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="40"> <b> layouts.n.prints@gmail.com </b> </p>
+        </div>
+    </div>
+
+  
+    <div class="content-section">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+					 <a href="Essentials.html">
+                    <img src="https://blog.mopria.org/wp-content/uploads/2022/02/iStock-1178808605-paper-stack.jpg" class="img-fluid" alt="Essentials">
+					</a>
+                    <h5><b>| Essentials</b></h5>
+                </div>
+				
+                <div class="col-md-4">
+					 <a href="Customizables.html">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjt7VR08ktwUEsGV1cPFlY9-qzmr36_cyv9V11fJtI53VWih275W_QpCiJzTR4RHfVaZHe0BJ9PmA3UvdxIE2gF3fBIUIlcKQOgkdSVtxy7r9XCMsSopdhNVv02u4IzLX2V3DrCxGfB88FH/w1600-h900-c/suga-bts-map-of-the-soul-persona-uhdpaper.com-4K-13.jpg" class="img-fluid" alt="Customizables">
+					</a>
+                    <h5><b>| Customizables</b></h5>
+                </div>
+				
+                <div class="col-md-4">
+					<a href="Other Services.html">
+                    <img src="https://wahprints.ae/content/images/products/products-slider/mugs/custom%20mug%20printing%20online%20abu%20dhabi.jpg?photolabId=5954&v=2CA34841AF80CF1ACA62A225D52E90D8" class="img-fluid" alt="Other Services">
+					</a>
+                    <h5><b>| Other Services</b></h5>
+                </div>
+            </div>
+			
+			<br><br>
+			<center>
+		
+			
+        </div>
+    </div>
+		
+			<section class="content-section2">
+        <div class="container">
+            <h3 class="mb-3">Contact Us!</h3>
+            <p>For inquiries, feel free to connect with us:</p>
+            <div class="social-icons">
+				
+                <a href="https://www.facebook.com/profile.php?id=61559872821018"><img src="https://img.icons8.com/ios-filled/100/FFFFFF/facebook-new.png" alt="Facebook" width="30"></a> &nbsp&nbsp
+                <a href="https://www.facebook.com/messages/t/256807597526149"><img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-messenger.png" alt="Messenger" width="30"></a> &nbsp&nbsp
+                <a href="https://www.google.com/maps/search/Lot+2D+Espiritu+Compound+UPS+5+Brgy.+San+Isidro,+1700/@14.4602784,121.0098128,17z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D"><img src="https://img.icons8.com/ios7/600/FFFFFF/google-maps-new.png" alt="Google Maps" width="30"></a>
+
+            </div>
+			
+        </div>
+		</center>
+    </section>
+		
+		
+    <footer>
+	<br>
+        <p>Print your imagination with us! ✨ <br> Send your files at: <img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="25"> <b> layouts.n.prints@gmail.com </b> </p>
+		
+    </footer>
+
+<br><br><br><br>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

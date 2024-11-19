@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://i.imgur.com/eGecm7S.jpeg" type="image/png">
+    <title>3Kreative Prints | Customizables</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+    
+	 	body {
+			background: linear-gradient(to right, black, #2b113c);
+			color: #e0e0e0;
+		}
+
+		.navbar {
+			background-color: #160b1d;
+		}
+
+		.navbar.navbar-expand-lg .navbar-brand {
+			font-size: 1em;
+		}
+
+		.navbar a[href="Customizables.html"] {
+			border: 2px solid rgba(255, 255, 255, 255);
+			border-radius: 14px;
+			padding: 4px 15px;
+		}
+		
+		.navbar a.navbar-brand:hover {
+        color: #d4af37;
+        text-shadow: 0 0 5px rgba(255, 223, 0, 0.7); 
+        transition: color 0.3s ease, text-shadow 0.3s ease; 
+		}
+
+		.menu-header {
+			background-color: #160b1d;
+			color: #f1f1f1;
+			padding: 20px 0;
+			text-align: center;
+		}
+
+		hr {
+			height: 1px;
+			width: 100%;
+			border: none;
+			color: white !important;
+			background-color: white !important;
+			opacity: 1 !important;
+		}
+
+		h1 {
+			color: white;
+			font-size: 85px;
+			font-family: Garamond, serif;
+		}
+
+		footer {
+			background-color: #0e0713 !important;
+			color: #f1f1f1 !important;
+			padding: 20px 0 !important;
+			text-align: center !important;
+			position: fixed !important;
+			bottom: 0 !important;
+			width: 100% !important;
+			height: 120px !important;
+			z-index: 100 !important;
+		}
+
+		.product-container {
+			background-color: #261a2e;
+			padding: 15px;
+			border-radius: 15px;
+			margin: 30px auto;
+			max-width: 80%;
+			color: white;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			margin-bottom: 30px;
+		}
+
+		.product-container img {
+			width: 100%;
+			height: auto;
+			max-width: 350px;
+			max-height: 500px;
+			object-fit: contain;
+			margin-bottom: 20px;
+			border-radius: 25px; 
+		}
+
+		.product-details {
+			width: 50%;
+			padding-left: 20px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+		}
+
+		.product-name {
+			font-size: 1.5em;
+			font-weight: bold;
+		}
+
+		.product-price {
+			font-size: 1.2em;
+			color: #ffcc00;
+		}
+
+		.material-dropdown, .quantity-dropdown {
+			margin-top: 20px;
+		}
+
+		.material-dropdown label, .quantity-dropdown label {
+			font-size: 1.1em;
+			color: #fff;
+		}
+
+		.material-dropdown .form-select, .quantity-dropdown .form-input {
+			width: 100%;
+			padding: 10px;
+			margin-top: 5px;
+			background-color: #160b1d;
+			border: 1px solid #fff;
+			color: #fff;
+			border-radius: 5px;
+			font-size: 1em;
+		}
+
+		.quantity-dropdown .form-input {
+			width: 60px;
+		}
+
+		.add-to-cart-btn {
+			background-color: #160b1d;
+			color: #fff;
+			border: none;
+			padding: 10px 20px;
+			font-size: 1.2em;
+			margin-top: 20px;
+			border-radius: 5px;
+			cursor: pointer;
+			text-decoration: none;
+		}
+
+		.add-to-cart-btn:hover {
+			background-color: #ffcc00;
+		}
+
+		.arrow-btns {
+			display: flex;
+			justify-content: center;
+			margin-top: 20px;
+		}
+
+		.arrow-btns a {
+			background-color: black;
+			color: #fff;
+			padding: 10px 20px;
+			font-size: 1.5em;
+			border-radius: 5px;
+			margin: 0 10px;
+			text-decoration: none;
+		}
+
+		.arrow-btns a:hover {
+			background-color: #ffcc00;
+		}
+
+
+		@media (max-width: 768px) {
+			.product-container {
+				flex-direction: column;
+				align-items: center;
+				max-width: 95%;
+				margin-bottom: 20px;
+			}
+
+			.product-container img {
+				width: 100%;
+				max-height: 300px;
+				margin-bottom: 20px; 
+			}
+
+			.product-details {
+				width: 80%;
+				padding-left: 0;
+				text-align: center;
+			}
+
+			.product-name {
+				font-size: 1.3em;
+			}
+
+			.product-price {
+				font-size: 1.1em;
+			}
+
+			.product-description {
+				font-size: 0.9em;
+			}
+
+			.arrow-btns a {
+				font-size: 1.2em;
+				padding: 8px 16px;
+			}
+		}
+
+		@media (max-width: 480px) {
+			h1 {
+				font-size: 60px;
+			}
+
+			.product-name {
+				font-size: 1.2em;
+			}
+
+			.product-price {
+				font-size: 1em;
+			}
+
+			.material-dropdown label,
+			.material-dropdown .form-select {
+				font-size: 0.9em;
+			}
+
+			.add-to-cart-btn {
+				font-size: 1em;
+				padding: 8px 16px;
+			}
+
+			.arrow-btns a {
+				font-size: 1em;
+				padding: 6px 12px;
+			}
+
+
+			.navbar .navbar-nav {
+				font-size: 1.2em;
+				padding: 5px;
+			}
+
+			.navbar-brand {
+				font-size: 1.1em;
+			}
+		}
+			
+	
+
+	</head>
+	</style>
+		<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+        <a class="navbar-brand d-flex align-items-center" href="index.html">
+            <img src="https://i.imgur.com/eGecm7S.jpeg"
+                 alt="Brand Logo" width="60">
+            &nbsp &nbsp <b>3Kreative Prints </b> &nbsp | Customizables
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/profile.php?id=61559872821018">
+                        <img src="https://img.icons8.com/m_rounded/200/FFFFFF/facebook.png" alt="Facebook" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.facebook.com/messages/t/256807597526149">
+                        <img src="https://img.icons8.com/ios11/512/FFFFFF/facebook-messenger.png" alt="Messenger" width="30">
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="https://www.google.com/maps/search/Lot+2D+Espiritu+Compound+UPS+5+Brgy.+San+Isidro,+1700/@14.4602784,121.0098128,17z/data=!3m1!4b1?hl=en&entry=ttu&g_ep=EgoyMDI0MTEwNi4wIKXMDSoASAFQAw%3D%3D">
+                        <img src="https://img.icons8.com/ios7/600/FFFFFF/google-maps-new.png" alt="G_Maps" width="25">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+	
+
+	<nav class="navbar navbar-expand-lg navbar-dark">
+	
+        <div class="container">
+		<hr>
+            <a class="navbar-brand" href="index.html">  &nbsp   Home  </a>
+            <a class="navbar-brand" href="Essentials.html">  &nbsp  Essentials  </a>
+			<a class="navbar-brand" href="Customizables.html">  &nbsp  <b> ◇ Customizables </b> </a>
+			<a class="navbar-brand" href="Other Services.html">  &nbsp   Other Services  </a>
+			<a class="navbar-brand" href="About Us.html">  &nbsp   About Us  </a>
+		<hr>
+        </div>
+    </nav>
+
+	
+	
+    <header class="menu-header">
+        <h1> <b> 3Kreative Prints </b> </h1>
+        <p><img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="30"> &nbsp <b> layouts.n.prints@gmail.com </b></p>
+		 
+    </header>
+	
+	
+    
+	
+	
+	<div class="product-container">
+    <img src="https://i.pinimg.com/736x/26/60/0f/26600f144de99d9fc178a1b83eb65878.jpg" alt="Item 1">
+    <img src="https://i.pinimg.com/736x/38/82/97/3882976d5a02daa1c87559e968bd73a0.jpg" alt="Item 2">
+    <img src="https://i.pinimg.com/736x/c1/e8/ae/c1e8ae15d34417c3f8d91b1a94c150c1.jpg" alt="Item 3">
+    <div class="product-details">
+        <h3 class="product-name">Photo Card</h3>
+        <div class="product-price" id="product-price">₱0</div>
+        <p class="product-description" style="color: white;"><i>Minimum of <b>2</b> per order</i></p>
+        <p class="product-description">Send your files at: <b>layouts.n.prints@gmail.com</b></p>
+
+        <div class="material-dropdown">
+            <label for="material-type">Choose Material:</label>
+            <select id="material-type" class="form-select" onchange="updatePrice()">
+                <option value="" disabled selected>Select Material</option>
+                <option value="glossy" data-price="2.5">Glossy - ₱5</option>
+                <option value="matte" data-price="2.5">Matte - ₱5</option>
+                <option value="glitter" data-price="5">Glitter - ₱10</option>
+                <option value="holographic" data-price="5">Holographic - ₱10</option>
+            </select>
+        </div>
+
+        <div class="quantity-dropdown">
+            <label for="quantity">Quantity:</label>
+            &nbsp;
+            <input type="number" id="quantity" class="form-input" value="0" min="2" onchange="updatePrice()" />
+        </div>
+
+        <a href="javascript:void(0);" class="add-to-cart-btn" onclick="addToCart(this)">Add to Cart</a>
+		<span id="na-message" style="color: #ffcc00; font-weight: bold; margin-left: 10px; display: none;"> NOTE: 𝘕𝘰𝘵 𝘺𝘦𝘵 𝘢𝘱𝘱𝘭𝘪𝘤𝘢𝘣𝘭𝘦! </span>
+
+        <div class="arrow-btns">
+            <a href="Customizables.html"><b>◇</b></a>
+            <a href="Customizables_Acrylic Keychain.html"><</a>
+            <a href="Customizables_Mini Filmstrips.html">></a>
+        </div>
+    </div>
+</div>
+
+<script>
+    function updatePrice() {
+        const materialSelect = document.getElementById("material-type");
+        const selectedOption = materialSelect.options[materialSelect.selectedIndex];
+        const price = selectedOption ? parseFloat(selectedOption.getAttribute("data-price")) : 0;
+
+        const quantityInput = document.getElementById("quantity");
+        let quantity = quantityInput ? parseFloat(quantityInput.value) : 2;
+
+  
+        if (quantity < 2) {
+            quantity = 2;
+            quantityInput.value = 2;
+        }
+
+        const totalPrice = price * quantity;
+
+        document.getElementById("product-price").innerText = `₱${Math.round(totalPrice)}`;
+    }
+
+
+    function addToCart(button) {
+        button.innerText = "𝘐𝘵𝘦𝘮(𝘴) 𝘴𝘶𝘤𝘤𝘦𝘴𝘴𝘧𝘶𝘭𝘭𝘺 𝘢𝘥𝘥𝘦𝘥 𝘵𝘰 𝘤𝘢𝘳𝘵!";
+        button.style.pointerEvents = "none"; 
+		document.getElementById("quantity").disabled = true; 
+		document.getElementById("material-type").disabled = true;
+		
+		const naMessage = document.getElementById("na-message");
+    naMessage.style.display = "inline";
+    }
+</script>
+
+    
+
+
+
+	<br><br><br><br><br><br>
+
+
+    <footer class="footer text-center">
+	
+        <p>Print your imagination with us! ✨ <br> Send your files at: <img src="https://img.icons8.com/p1em/512/FFFFFF/gmail.png" alt="Messenger" width="25"> <b> layouts.n.prints@gmail.com </b> </p>
+		
+	
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
